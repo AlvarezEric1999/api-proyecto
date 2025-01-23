@@ -1,17 +1,12 @@
 import mysql from 'mysql2/promise';
 
+import { Sequelize } from 'sequelize';
 
-const connection  = mysql.createPool({
-    host:process.env.HOST,
-    database:process.env.DATABASE,
-    user:process.env.USER,
-    password:process.env.PASSWORD
+
+export const sequelize = new Sequelize('gestionCitas','root','admin123',
+    {
+    host:'localhost',
+    dialect:'mysql'
 })
 
-
-const getConnection = ()=>{
-
-    return connection;
-}
-
-export default getConnection
+export default sequelize;

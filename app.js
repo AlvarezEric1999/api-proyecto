@@ -4,8 +4,16 @@ import express from 'express'
 import morgan from 'morgan'
 const app = express()
 import routes from "./routes/routes.js"
-import {config} from "dotenv"
+import {config} from "dotenv" 
+import  sequelize  from './database/config.js'
+//import  cita  from './models/citas.js'
+import {cita} from './models/citas.js'
 
+
+
+
+
+await sequelize.authenticate()
 
 const dotenv = config();
 
