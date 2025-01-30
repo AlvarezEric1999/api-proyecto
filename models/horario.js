@@ -22,9 +22,12 @@ export const horario = sequelize.define('horario',{
         bloque_horario:{
             type:DataTypes.INTEGER
         },
-        estado:{
+        disponible:{
             type:DataTypes.BOOLEAN,
             defaultValue:true
+        },
+        hora:{
+            type:DataTypes.STRING
         }
     })
 

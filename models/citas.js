@@ -51,10 +51,9 @@ import { horario } from "./horario.js";
   
 
 
-/*await usuario.sync();
-await medico.sync();
-await cita.sync();
-await horario.sync();
-*/
+//await usuario.sync();
+//await medico.sync();
+//await cita.sync();
 
-await horario.sync()
+
+//await horario.sync()
